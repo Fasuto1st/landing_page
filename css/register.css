@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+:root{
+    --orange:#ff7800;
+    --black:#101010;
+    --light-color:#fff;
+    --box-shadow:0 .5rem 1rem rgba(102, 102, 102, 1);
+    --border:.2rem solid rgba(102, 102, 102, 1);
+    --outline:.1rem solid rgba(102, 102, 102, 1);
+    --outline-hover:.2rem solid var(--orange);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background: url(../img/backg_regis.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover{
+    background: var(--orange);
+    color: var(--light-color);
+}
+
+.register-form{
+    position: absolute;
+    width: 60rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: .5rem;
+    background: var(--light-color);
+    text-align: center;
+}
+
+.register-form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+.register-form .box{
+    margin: .7rem 0;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.register-form p{
+    font-size: 1.4rem;
+    padding: .5rem 0;
+    color: #666;
+}
+
+.register-form p a{
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+.register-form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
